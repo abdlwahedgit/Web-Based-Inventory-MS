@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url('water1.png') no-repeat;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+
+.header:hover::before {
+    left: 100%;
+}
+
+h1 {
+    text-align: top;
+}
+
+.button {
+    text-decoration: none;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    width: 130px;
+    height: 15px;
+}
+
+.button:hover {
+    color: #0088a9;
+
+}
+
+.navbar {
+    overflow: hidden;
+    margin-right: 150px;
+
+
+}
+
+.navbar a {
+    color: #2d1a1a;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+    padding: 13px 13px;
+}
+
+.navbar a:hover {
+    color: rgb(0, 255, 38);
+}
+
+footer {
+    background-color: #e3dae41f;
+    color: #fff;
+
+    padding: 10px;
+    font-size: 12px;
+    /* Small font size */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
